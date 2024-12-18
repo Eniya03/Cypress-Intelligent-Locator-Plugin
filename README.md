@@ -28,13 +28,13 @@ Add the following to your cypress/support/index.js file:
  Use the cy.suggestLocator command to analyze elements and log the best possible locators:
 
     describe('Intelligent Locator Test', () => {
-  it('Logs suggested locators for an element', () => {
-    cy.visit('https://example.cypress.io/commands/querying');
+      it('Logs suggested locators for an element', () => {
+      cy.visit('https://example.cypress.io/commands/querying');
     
-    // Analyze a button
-    cy.suggestLocator('.query-btn');
-  });
-});
+       // Analyze a button
+        cy.suggestLocator('.query-btn');
+       });
+    });
 
 ## 3.Output Example
 
